@@ -1,0 +1,6 @@
+# Full-resolution originals; web-sized copies live in assets/
+_source-assets/
+# Working files that are not linked from the site
+assets/TLDR/AnnotatedInterior.pptx
+# Private: contains phone number; source material only
+assets/Stowell_Spencer_resume_grad.pdf

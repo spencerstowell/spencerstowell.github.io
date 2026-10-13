@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="PhD research on optimization and long-horizon control for inflatable isoperimetric truss robots.">
+  <title>Isoperimetric Truss Robotics — Spencer Stowell</title>
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://spencerstowell.github.io/projects/isoperimetric-truss/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Spencer Stowell">
+  <meta property="og:title" content="Isoperimetric Truss Robotics — Spencer Stowell">
+  <meta property="og:description" content="PhD research on optimization and long-horizon control for inflatable isoperimetric truss robots.">
+  <meta property="og:url" content="https://spencerstowell.github.io/projects/isoperimetric-truss/">
+  <meta property="og:image" content="https://spencerstowell.github.io/assets/Iso_truss/cover_photo.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body class="project-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><a class="wordmark" href="../../index.html" aria-label="Spencer Stowell home">SS<span>·</span></a><nav aria-label="Primary navigation"><a href="../../index.html">Home</a><a href="../../index.html#projects">Projects</a><a href="../../publications/">Publications</a><a href="../../presentations/">Presentations</a><a href="../../cv/">CV</a><a href="../../contact/">Contact</a></nav><a class="header-contact" href="mailto:stowel22@byu.edu">Get in touch ↗</a></header>
+  <main id="main">
+    <section class="project-hero section"><a class="back-link" href="../../index.html?category=research#projects">← Back to research</a><p class="eyebrow">PhD research / CMR Lab</p><h1>Isoperimetric<br>truss robotics</h1><p class="project-lead">Developing optimization and long-horizon control methods for modular, inflatable robotic trusses.</p><div class="project-facts"><div><small>Research area</small><p>Robot dynamics / optimization</p></div><div><small>System</small><p>Inflatable constant-perimeter truss robot</p></div><div><small>Integration</small><p>ROS 2 / embedded mechatronics</p></div></div></section>
+    <section class="full-media section" aria-labelledby="system-media-title"><div class="gallery-heading"><div><p class="eyebrow">System photographs</p><h2 id="system-media-title">A truss you<br>can reconfigure.</h2></div><p>The inflatable truss system in lab assembly and outdoor configuration.</p></div><div class="full-media-grid"><figure><img src="../../assets/Iso_truss/double_octahedron.jpg" alt="Double-octahedron inflatable truss robot in an outdoor configuration" loading="eager"><figcaption>Double-octahedron configuration outdoors</figcaption></figure><figure><img src="../../assets/Iso_truss/assembly_2.jpg" alt="Research team assembling the large inflatable truss robot in the lab" loading="lazy"><figcaption>Full-scale assembly in the lab</figcaption></figure><figure><img src="../../assets/Iso_truss/assembly_1.jpg" alt="Team members working on the actuator and mechatronics assembly" loading="lazy"><figcaption>Actuator and mechatronics integration</figcaption></figure><figure><img src="../../assets/Iso_truss/cover_photo.jpg" alt="BYU Compliant Mechanisms and Robotics Lab team with the inflatable truss system" loading="lazy"><figcaption>CMR Lab team and system</figcaption></figure></div></section>
+    <section class="project-description section" aria-labelledby="research-title"><div><p class="eyebrow">Research direction</p><h2 id="research-title">Control for<br>changing structure.</h2></div><div><p>My PhD research in BYU’s Compliant Mechanisms and Robotics Lab investigates modeling, optimization, and long-horizon control for dynamic compliant and inflatable robots. A central platform is an isoperimetric truss whose actuators reshape the structure while maintaining a constant perimeter.</p><ul class="contribution-list"><li><strong>Faster inverse kinematics.</strong> Revised the single-step inverse-kinematics optimization with analytic Jacobians, bringing solve time below real time.</li><li><strong>Higher actuator capacity.</strong> Overhauled the motor driver and mechatronics to raise peak-current capacity from 5 A to 15 A.</li><li><strong>Faster robot communications.</strong> Replaced the Arduino Nano and NRF24L01 radio link with a dual-core ESP32-S3 and ROS 2 over 2.5 GHz Wi-Fi. Confirmed a 50 Hz message rate, up from 5 Hz.</li></ul></div></section>
+    <section class="project-media section" aria-labelledby="related-work-title"><div class="project-heading"><div><p class="eyebrow">Related work</p><h2 id="related-work-title">Team system.<br>Individual research.</h2></div><p>The arXiv preprint documents the broader modular truss system developed by a team. My current PhD work builds on this research area through control and optimization; the team project and my individual research are distinct contributions.</p></div><div class="project-links"><a href="https://arxiv.org/abs/2602.02915" target="_blank" rel="noreferrer">View related team-system preprint ↗</a><a href="https://bigidea.nianet.org/wp-content/uploads/BYU-Digital-Poster.pdf" target="_blank" rel="noreferrer">View NASA BIG Idea Challenge team poster ↗</a><a href="../../publications/">Publication record ↗</a></div></section>
+  </main>
+  <footer><span>© <span id="year"></span> Spencer Stowell</span><span class="footer-links"><a href="https://www.linkedin.com/in/spencerstowell/" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a><a href="mailto:stowel22@byu.edu" aria-label="Email">@</a><a href="https://github.com/spencerstowell" target="_blank" rel="noreferrer" aria-label="GitHub">gh</a></span><span>Robotics &amp; research portfolio</span></footer>
+  <script>document.querySelector('#year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
