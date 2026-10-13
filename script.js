@@ -24,8 +24,10 @@ grid.innerHTML = projects.filter(project => project.homepage !== false).map((pro
       ? `<a class="card-resource" href="${project.resources[0].url}" target="_blank" rel="noreferrer">${project.cardLinkLabel} →</a>`
       : '<span class="card-pending">Project record forthcoming</span>';
   const media = project.image ? `<img src="${project.image}" alt="${project.name} project media" loading="lazy">` : '<i></i>';
+  const typeParts = project.type.split(' / ').filter(part => part.toLowerCase() !== project.category.toLowerCase());
+  const label = [project.category, ...typeParts].join(' / ');
   const wholeCardLink = project.page ? `<a class="project-card-link" href="${project.page}" aria-label="View ${project.name} project record"></a>` : '';
-  return `<article class="project-card ${project.style}" data-category="${project.category}" id="project-${project.id}">${wholeCardLink}<div class="card-media ${project.image ? 'has-image' : ''}"><span>${String(index + 1).padStart(2, '0')}</span>${media}</div><div class="card-copy"><small>${project.category} / ${project.type}</small><h3>${project.name}</h3><p>${project.summary}</p><div><span>${project.status}</span>${action}</div></div></article>`;
+  return `<article class="project-card ${project.style}" data-category="${project.category}" id="project-${project.id}">${wholeCardLink}<div class="card-media ${project.image ? 'has-image' : ''}"><span>${String(index + 1).padStart(2, '0')}</span>${media}</div><div class="card-copy"><small>${label}</small><h3>${project.name}</h3><p>${project.summary}</p><div><span>${project.status}</span>${action}</div></div></article>`;
 }).join('');
 
 const filterButtons = Array.from(document.querySelectorAll('.project-filters button'));
